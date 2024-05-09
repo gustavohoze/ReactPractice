@@ -9,18 +9,16 @@ type userData = {
 async function handleSubmit(username: string, password: string) {
   const database = await fetch("http://localhost:3000/users");
   const databasedata = await database.json();
-  // let flag = 0;
-
+  let flag = 0;
   for (let data of databasedata) {
-    console.log(data.username);
-    console.log(data.password);
     if (username == data.username && password == data.password) {
       console.log("Success");
-      break;
+      flag++;
     }
-    // flag++;
   }
-  window.alert("Invalid user or password");
+  if (flag == 0) {
+    window.alert("Invalid username or password");
+  }
 }
 
 const LoginValidationButton: FC<userData> = ({ username, password }) => {

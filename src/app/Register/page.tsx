@@ -11,6 +11,7 @@ const page = () => {
     event.preventDefault();
 
     setError(""); // Clear any previous errors
+    setSuccess("");
 
     try {
       const data = { username, password };
