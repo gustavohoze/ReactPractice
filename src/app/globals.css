@@ -103,7 +103,7 @@
     position: relative;
   }
 
-  h1{
+#first{
     font-family: 'Sedan SC';
     position: absolute;
     background: -webkit-linear-gradient(#ffffff, #4f4e4e);
@@ -116,11 +116,10 @@
     text-shadow: 2px 2px 35px white;
     animation: homePageTextAnimation 6s ease-in-out infinite;
     cursor:default;
-  }
-  #first{
     top: 40%;
     left: 25%;
   }
+
 
 
 

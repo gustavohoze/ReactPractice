@@ -27,6 +27,7 @@ const LoginValidationButton: FC<userData> = ({ username, password }) => {
       onClick={() => {
         handleSubmit(username, password);
       }}
+      className="bg-white  text-black p-2 mt-2 mb-2 m-6"
     >
       Login
     </button>
